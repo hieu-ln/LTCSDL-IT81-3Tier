@@ -1,0 +1,20 @@
+﻿@page
+@model PrivacyModel
+@{
+    ViewData["Title"] = "Xử lý dữ liệu với bảng [Categories]";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Thông tin Category có mã bằng [2] như sau</p>
+<table style="width:325px;">
+    <tr>
+        <th width="20%">Cate ID</th>
+        <th width="40%">Category Name</th>
+        <th width="40%">Description</th>
+    </tr>
+    <tr>
+        <td>@Model.cate.CategoryID</td>
+        <td>@Model.cate.CategoryName</td>
+        <td>@Model.cate.Description</td>
+    </tr>
+</table>
